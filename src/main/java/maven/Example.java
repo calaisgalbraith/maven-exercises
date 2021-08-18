@@ -3,19 +3,16 @@ package maven;
 import org.apache.commons.lang3.StringUtils;
 import java.util.Scanner;
 
-import java.util.ArrayList;
-import java.util.Scanner;
-
-public class example {
+public class Example {
 
     public static void main(String[] args) {
 
         Scanner sc = new Scanner(System.in);
 
-        System.out.println("Enter Something: ");
+        System.out.print("Enter Something: ");
         String userInput = sc.nextLine();
 
-        System.out.printf("\nYou Entered: %s", userInput);
+        System.out.printf("You Entered: %s", userInput);
 
         //Tells if what user enter is number or not
         if(StringUtils.isNumeric(userInput)){
